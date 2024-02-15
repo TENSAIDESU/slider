@@ -1,0 +1,112 @@
+body {
+  background-color: black;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden; 
+}
+.slides {
+transform: translate 0.5s ease-in-out;
+}
+.non{
+  color: black;
+  border-bottom: 2px solid #E3B873;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  grid-column: 1;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 10px;
+  color: #FFFF;
+}
+
+.dots {
+  display: flex;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #FFFF;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+  margin-right: 100px;
+}
+
+.links a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.links a.active {
+  font-weight: bold;
+  color: #E3B873;
+  border-bottom: 2px solid #E3B873;
+}
+.containers{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 50px;
+
+}
+.container{
+  grid-column: span 2;
+  grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+}
+.ttle{
+  display: flex;
+  gap: 20px;
+  grid-column: span 2;
+}
+.txt{
+  grid-column: span 2;
+}
+.container-item{
+  display: flex;
+  flex-direction: column;
+grid-row:2 ;
+}
+.items{
+  display: flex;
+  gap: 45px
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+}
+.item-two{
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+}
+.image {
+  width: auto;
+  grid-column: 3 / span 3;
+grid-row: span 2;}
